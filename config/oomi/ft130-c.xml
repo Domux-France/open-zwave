@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductExport xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>2767</Id>
+  <Name>WAllMote</Name>
+  <Description>Oomi Mote is an intelligent Z-Wave remote controller that mounted on a wall. It has 4 touch buttons that you can easily control the Z-Wave devices in your home network via touching, long pressing or sliding the button areas. 
+Its surface has a RGB LED to indicate the button actions also accompanied by touch beep and vibration. 
+The Mote is also a security Z-Wave device and supports Over The Air (OTA) feature for the products firmware upgrade.
+</Description>
+  <Description_Short>Oomi Mote is an intelligent Z-Wave remote controller that is mounted on a wall</Description_Short>
+  <Brand>Oomi</Brand>
+  <Identifier>FT130-K</Identifier>
+  <CertificationNumber>ZC10-18015933</CertificationNumber>
+  <OemVersion>HW: 130 FW: 2.02</OemVersion>
+  <HardwarePlatform>ZM5101</HardwarePlatform>
+  <ZWaveVersion>6.61.01</ZWaveVersion>
+  <LibraryType>Enhanced 232 Slave</LibraryType>
+  <DeviceType>Wall Controller</DeviceType>
+  <RoleType>Portable Slave</RoleType>
+  <ManufacturerId>0x016A</ManufacturerId>
+  <ProductTypeId>0x1D02</ProductTypeId>
+  <ProductId>0x0082</ProductId>
+  <FrequencyName>China</FrequencyName>
+  <UserIcon>0x1C04</UserIcon>
+  <InstallerIcon>0x1C04</InstallerIcon>
+  <ManualUrl>https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&amp;filename=Manuals/2767/Oomi Mote manual.pdf</ManualUrl>
+  <InclusionDescription>Turn the primary controller of Z-Wave network into inclusion mode, short press the product’s Action button that you can find on the product's housing.</InclusionDescription>
+  <ExclusionDescription>Turn the primary controller of Z-Wave network into exclusion mode, short press the product’s Action button that you can find on the product's housing.</ExclusionDescription>
+  <LearnModeDescription />
+  <ResetDescription>Press and hold the Action button that you can find on the product's housing for 20 seconds and then release. This procedure should only be used when the primary controller is missing or inoperable.</ResetDescription>
+  <WakeupDescription />
+  <OtherSpecialFeaturesDescription>Support "Over the Air Firmware Updating" and “Z-Wave Security”.
+</OtherSpecialFeaturesDescription>
+  <CertificationApprovedDate>2018-01-03T04:02:35.245094</CertificationApprovedDate>
+  <Image>https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-18015933</Image>
+  <Categories>
+    <string>All Lighting Devices</string>
+    <string>Lighting Accessories</string>
+  </Categories>
+  <SupportedCommandClasses>
+    <CommandClassExport>
+      <Name>Association Group Information V1</Name>
+      <Identifier>COMMAND_CLASS_ASSOCIATION_GRP_INFO</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Association V2</Name>
+      <Identifier>COMMAND_CLASS_ASSOCIATION_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Battery V1</Name>
+      <Identifier>COMMAND_CLASS_BATTERY</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Central Scene V3</Name>
+      <Identifier>COMMAND_CLASS_CENTRAL_SCENE_V3</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Configuration V1</Name>
+      <Identifier>COMMAND_CLASS_CONFIGURATION</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Device Reset Local V1</Name>
+      <Identifier>COMMAND_CLASS_DEVICE_RESET_LOCALLY</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Firmware Update MD V2</Name>
+      <Identifier>COMMAND_CLASS_FIRMWARE_UPDATE_MD_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Manufacturer Specific V2</Name>
+      <Identifier>COMMAND_CLASS_MANUFACTURER_SPECIFIC_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Multi-Channel Association V3</Name>
+      <Identifier>COMMAND_CLASS_MULTI_CHANNEL_ASSOCIATION_V3</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Multi-Channel V4</Name>
+      <Identifier>COMMAND_CLASS_MULTI_CHANNEL_V4</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Notification V4</Name>
+      <Identifier>COMMAND_CLASS_NOTIFICATION_V4</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Powerlevel</Name>
+      <Identifier>COMMAND_CLASS_POWERLEVEL</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Security V1</Name>
+      <Identifier>COMMAND_CLASS_SECURITY</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Version V2</Name>
+      <Identifier>COMMAND_CLASS_VERSION_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Wake-Up V2</Name>
+      <Identifier>COMMAND_CLASS_WAKE_UP_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Z-Wave Plus Info V2</Name>
+      <Identifier>COMMAND_CLASS_ZWAVEPLUS_INFO_V2</Identifier>
+    </CommandClassExport>
+  </SupportedCommandClasses>
+  <ControlledCommandClasses>
+    <CommandClassExport>
+      <Name>Basic V1</Name>
+      <Identifier>COMMAND_CLASS_BASIC</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Binary Switch V2</Name>
+      <Identifier>COMMAND_CLASS_SWITCH_BINARY_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Multilevel Switch V4</Name>
+      <Identifier>COMMAND_CLASS_SWITCH_MULTILEVEL_V4</Identifier>
+    </CommandClassExport>
+  </ControlledCommandClasses>
+  <S2Classes />
+  <AssociationGroups>
+    <AssociationGroupExport>
+      <Description>Z-Wave Plus Lifeline.
+When touching the Button 1 to 4, the Central Scene Notificcation command will be sent to the associated node (1) in Association group 1. </Description>
+      <GroupNumber>1</GroupNumber>
+      <MaximumNodes>1</MaximumNodes>
+    </AssociationGroupExport>
+    <AssociationGroupExport>
+      <Description>When touching the Button 1, the Basic Set command will be sent to the associated nodes in Association group 2.</Description>
+      <GroupNumber>2</GroupNumber>
+      <MaximumNodes>5</MaximumNodes>
+    </AssociationGroupExport>
+    <AssociationGroupExport>
+      <Description>When touching the Button 1, the Multilevel Switch Set command will be sent to the associated nodes in Association group 3.</Description>
+      <GroupNumber>3</GroupNumber>
+      <MaximumNodes>5</MaximumNodes>
+    </AssociationGroupExport>
+    <AssociationGroupExport>
+      <Description>When touching the Button 2, the Basic Set command will be sent to the associated nodes in Association group 4.</Description>
+      <GroupNumber>4</GroupNumber>
+      <MaximumNodes>5</MaximumNodes>
+    </AssociationGroupExport>
+    <AssociationGroupExport>
+      <Description>When touching the Button 2, the Multilevel Switch Set command will be sent to the associated nodes in Association group 5.</Description>
+      <GroupNumber>5</GroupNumber>
+      <MaximumNodes>5</MaximumNodes>
+    </AssociationGroupExport>
+    <AssociationGroupExport>
+      <Description>When touching the Button 3, the Basic Set command will be sent to the associated nodes in Association group 6.</Description>
+      <GroupNumber>6</GroupNumber>
+      <MaximumNodes>5</MaximumNodes>
+    </AssociationGroupExport>
+    <AssociationGroupExport>
+      <Description>When touching the Button 3, the Multilevel Switch Set command will be sent to the associated nodes in Association group 7.</Description>
+      <GroupNumber>7</GroupNumber>
+      <MaximumNodes>5</MaximumNodes>
+    </AssociationGroupExport>
+    <AssociationGroupExport>
+      <Description>When touching the Button 4, the Basic Set command will be sent to the associated nodes in Association group 8.</Description>
+      <GroupNumber>8</GroupNumber>
+      <MaximumNodes>5</MaximumNodes>
+    </AssociationGroupExport>
+    <AssociationGroupExport>
+      <Description>When touching the Button 4, the Multilevel Switch Set command will be sent to the associated nodes in Association group 9.</Description>
+      <GroupNumber>9</GroupNumber>
+      <MaximumNodes>5</MaximumNodes>
+    </AssociationGroupExport>
+  </AssociationGroups>
+  <ConfigurationParameters>
+    <ConfigurationParameterExport>
+      <Name>Enable/disable the touch sound.</Name>
+      <Description>Enable/disable the touch sound.</Description>
+      <ParameterNumber>1</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>1</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>To set which Command would be sent to the associated nodes in association group 2, 4, 6, 8.</Name>
+      <Description>To set which Command would be sent to the associated nodes in association group 2, 4, 6, 8.</Description>
+      <ParameterNumber>11</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Baisc Set </Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Switch Binary Set</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/disable the touch vibration.</Name>
+      <Description>Enable/disable the touch vibration.</Description>
+      <ParameterNumber>2</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/disable to lock all configuration parameters.</Name>
+      <Description>Enable/disable to lock all configuration parameters.</Description>
+      <ParameterNumber>252</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Reset the Mote</Name>
+      <Description>Reset the Mote to factory default.</Description>
+      <ParameterNumber>255</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Reset all configuration parameters to factory default setting</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1431655765</From>
+          <To>1431655765</To>
+          <Description>Reset to factory default setting and removed from the z-wave network</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/disable the function of button slide.</Name>
+      <Description>Enable/disable the function of button slide.</Description>
+      <ParameterNumber>3</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>1</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the low battery value.</Name>
+      <Description>Set the low battery value..</Description>
+      <ParameterNumber>39</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>5</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>5</From>
+          <To>50</To>
+          <Description>The value range is 5% to 50%.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>To configure which report will be sent when pressing the buttons.</Name>
+      <Description>To set which notification would be sent to the associated devices (Group 1) when pressing the buttons.</Description>
+      <ParameterNumber>4</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>1</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Send Central Scene Command Notification</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>3</From>
+          <To>3</To>
+          <Description>Send Central Scene Command Notification and Configuration report</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/ disable to blink the orange Led when WallMote sends out Wake Up Notification </Name>
+      <Description>Enable/ disable to blink the orange Led when WallMote sends out Wake Up Notification. </Description>
+      <ParameterNumber>81</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/ disable to blink the blue Led (or yellow Led if low battery) for 3 seconds before it changes to red when the button control message is failed to be sent out.</Name>
+      <Description>Enable/ disable to blink the blue Led (or yellow Led if low battery) for 3 seconds before it changes to red when the button control message is failed to be sent out.</Description>
+      <ParameterNumber>82</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>1</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/ disable to light ON the orange Led when WallMote is in USB charging.</Name>
+      <Description>Enable/ disable to light ON the orange Led when WallMote is in USB charging.</Description>
+      <ParameterNumber>83</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>1</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable, the orange LED will blink 3 times and then be OFF once the WallMote is USB powered on.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/ disable the Led indication when pressing the control buttons</Name>
+      <Description>Enable/ disable the Led indication when pressing the control buttons</Description>
+      <ParameterNumber>84</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>1</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+  </ConfigurationParameters>
+  <Features>
+    <FeatureExport>
+      <feature_Id>36</feature_Id>
+      <product_Id>2767</product_Id>
+      <option_value_bool>false</option_value_bool>
+      <option_value_text />
+      <option_value_selections>
+        <string>Power Management</string>
+      </option_value_selections>
+      <feature_Type>eSelect_Many</feature_Type>
+      <featureName>Supported Notification Types</featureName>
+      <featureDescription>Select the Notification Types that the product handles (controllers), or sends (slaves).</featureDescription>
+      <featurePrompt>Use the CTRL key to select more than one.
+</featurePrompt>
+    </FeatureExport>
+    <FeatureExport>
+      <feature_Id>22</feature_Id>
+      <product_Id>2767</product_Id>
+      <option_value_bool>false</option_value_bool>
+      <option_value_text />
+      <option_value_selections>
+        <string>Updatable by Consumer by RF</string>
+      </option_value_selections>
+      <feature_Type>eSelect_One</feature_Type>
+      <featureName>Firmware Updatable</featureName>
+      <featureDescription>Indicates whether the firmware can be updated and whether it is done by the consumer or a technician.</featureDescription>
+      <featurePrompt>Choose one.</featurePrompt>
+    </FeatureExport>
+    <FeatureExport>
+      <feature_Id>17</feature_Id>
+      <product_Id>2767</product_Id>
+      <option_value_bool>false</option_value_bool>
+      <option_value_text />
+      <option_value_selections>
+        <string>Central Scene</string>
+      </option_value_selections>
+      <feature_Type>eSelect_One</feature_Type>
+      <featureName>Z-Wave Scene Type</featureName>
+      <featureDescription>Indicates which of the two types of Z-Wave scene command classes are supported. Scenes or Central Scene</featureDescription>
+      <featurePrompt>Choose one.</featurePrompt>
+    </FeatureExport>
+  </Features>
+  <Supports_NWI>true</Supports_NWI>
+  <Supports_Explorer>true</Supports_Explorer>
+  <is_FLiRS>false</is_FLiRS>
+  <Supports_SmartStart>false</Supports_SmartStart>
+</ProductExport>
