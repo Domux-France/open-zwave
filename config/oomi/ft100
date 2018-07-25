@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductExport xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>2592</Id>
+  <Name>MultiSensor </Name>
+  <Description>Oomi MultiSensor looks like a motion sensor and it acts like one too. But it’s also so much more. Installing this 1 piece of Z-Wave® technology is the same as installing 6 pieces of Z-Wave technology. Your home control network will immediately understand motion, temperature, humidity, light, Ultraviolet and Vibration readings wherever MultiSensor installed. Those intelligent readings will equate to intelligence automation. And intelligent automation will give you the perfect, smart home.</Description>
+  <Description_Short>Oomi MultiSensor is a Z-Wave motion sensor, temperature sensor, humidity sensor, lighting sensor, Ultraviolet sensor and Vibration sensor, all in one package.</Description_Short>
+  <Brand>Oomi</Brand>
+  <Identifier>FT100-K</Identifier>
+  <CertificationNumber>ZC10-17095774</CertificationNumber>
+  <OemVersion>HW: 100 FW: 1.09</OemVersion>
+  <HardwarePlatform>ZM5101</HardwarePlatform>
+  <ZWaveVersion>6.51.09</ZWaveVersion>
+  <LibraryType>Enhanced 232 Slave</LibraryType>
+  <DeviceType>Multilevel Sensor</DeviceType>
+  <RoleType>Reporting Sleeping Slave</RoleType>
+  <ManufacturerId>0x016A</ManufacturerId>
+  <ProductTypeId>0x1D02</ProductTypeId>
+  <ProductId>0x0064</ProductId>
+  <FrequencyName>China</FrequencyName>
+  <UserIcon>0x0C07</UserIcon>
+  <InstallerIcon>0x0C07</InstallerIcon>
+  <ManualUrl>https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&amp;filename=Manuals/2592/Oomi MultiSensor manual3.pdf</ManualUrl>
+  <InclusionDescription>Turn the primary controller of Z-Wave network into inclusion mode, short press the product’s Z-Wave button that you can find in the back of the product.</InclusionDescription>
+  <ExclusionDescription>Turn the primary controller of Z-Wave network into exclusion mode, short press the product’s Z-Wave button that you can find in back of the product.</ExclusionDescription>
+  <LearnModeDescription />
+  <ResetDescription>Press and hold the Z-Wave button that you can find in back of the product for 20 seconds and then release. This procedure should only be used when the primary controller is inoperable.</ResetDescription>
+  <WakeupDescription>Pressing the Z-Wave button once will trigger sending the Wake up notification command. If press and hold the Z-Wave button for 3 seconds, the MultiSensor will wake up for 10 minutes.</WakeupDescription>
+  <OtherSpecialFeaturesDescription>Support "Over the Air Firmware Updating" and “Z-Wave Security”.</OtherSpecialFeaturesDescription>
+  <CertificationApprovedDate>2017-09-13T19:33:12.956231</CertificationApprovedDate>
+  <Image>https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-17095774</Image>
+  <Categories>
+    <string>Sensors</string>
+  </Categories>
+  <SupportedCommandClasses>
+    <CommandClassExport>
+      <Name>Association Group Information V1</Name>
+      <Identifier>COMMAND_CLASS_ASSOCIATION_GRP_INFO</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Association V2</Name>
+      <Identifier>COMMAND_CLASS_ASSOCIATION_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Basic V1</Name>
+      <Identifier>COMMAND_CLASS_BASIC</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Battery V1</Name>
+      <Identifier>COMMAND_CLASS_BATTERY</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Configuration V1</Name>
+      <Identifier>COMMAND_CLASS_CONFIGURATION</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Device Reset Local V1</Name>
+      <Identifier>COMMAND_CLASS_DEVICE_RESET_LOCALLY</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Firmware Update MD V2</Name>
+      <Identifier>COMMAND_CLASS_FIRMWARE_UPDATE_MD_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Manufacturer Specific V2</Name>
+      <Identifier>COMMAND_CLASS_MANUFACTURER_SPECIFIC_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Notification V3</Name>
+      <Identifier>COMMAND_CLASS_NOTIFICATION_V3</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Powerlevel</Name>
+      <Identifier>COMMAND_CLASS_POWERLEVEL</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Security V1</Name>
+      <Identifier>COMMAND_CLASS_SECURITY</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Sensor Binary V1</Name>
+      <Identifier>COMMAND_CLASS_SENSOR_BINARY</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Sensor Multilevel V5</Name>
+      <Identifier>COMMAND_CLASS_SENSOR_MULTILEVEL_V5</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Version V2</Name>
+      <Identifier>COMMAND_CLASS_VERSION_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Wake-Up V2</Name>
+      <Identifier>COMMAND_CLASS_WAKE_UP_V2</Identifier>
+    </CommandClassExport>
+    <CommandClassExport>
+      <Name>Z-Wave Plus Info V2</Name>
+      <Identifier>COMMAND_CLASS_ZWAVEPLUS_INFO_V2</Identifier>
+    </CommandClassExport>
+  </SupportedCommandClasses>
+  <ControlledCommandClasses>
+    <CommandClassExport>
+      <Name>Basic V1</Name>
+      <Identifier>COMMAND_CLASS_BASIC</Identifier>
+    </CommandClassExport>
+  </ControlledCommandClasses>
+  <S2Classes />
+  <AssociationGroups>
+    <AssociationGroupExport>
+      <Description>The MultiSensor supports 1 association group. 
+Group 1 is assigned to the Lifeline association group and can add max 5 association nodes.
+When the PIR motion sensor is triggered, the MultiSensor will send Basic Set (0xFF) to the associated nodes. If no PIR motion is triggered after the PIR interval time (configurable), the MultiSensor will send Basic Set (0x00) to the associated nodes.
+The automatically reports of temperature, humidity, luminance and ultraviolet (configurable) also can be sent to the associated nodes.
+</Description>
+      <GroupNumber>1</GroupNumber>
+      <MaximumNodes>5</MaximumNodes>
+    </AssociationGroupExport>
+  </AssociationGroups>
+  <ConfigurationParameters>
+    <ConfigurationParameterExport>
+      <Name>Set the parameter 101-103 to default values.</Name>
+      <Description>Set the parameter 101-103 to default values.</Description>
+      <ParameterNumber>100</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Set the parameter 101-103 to default values.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>To set which report would be sent in Report group 1</Name>
+      <Description>To set which report would be sent in Report group 1.
+
+Note:
+You can also set all sensor reports to be sent out at the same time. E.g. If you want the batter report and temperature report to be sent out at the same time, you just need to set the configuration value to 33 (1+32).  </Description>
+      <ParameterNumber>101</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>241</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>128</From>
+          <To>128</To>
+          <Description>Luminance Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Battery Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>32</From>
+          <To>32</To>
+          <Description>Temperature Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>64</From>
+          <To>64</To>
+          <Description>Humidity Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>16</From>
+          <To>16</To>
+          <Description>Ultraviolet Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>To set which report would be sent in Report group 2</Name>
+      <Description>To set which report would be sent in Report group 2.
+
+Note:
+You can also set all sensor reports to be sent out at the same time. E.g. If you want the batter report and temperature report to be sent out at the same time, you just need to set the configuration value to 33 (1+32).  </Description>
+      <ParameterNumber>102</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>16</From>
+          <To>16</To>
+          <Description>Ultraviolet Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Battery Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>32</From>
+          <To>32</To>
+          <Description>Temperature Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>128</From>
+          <To>128</To>
+          <Description>Luminance Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>64</From>
+          <To>64</To>
+          <Description>Humidity Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>To set which report would be sent in Report group 3</Name>
+      <Description>To set which report would be sent in Report group 3.
+Note:
+You can also set all sensor reports to be sent out at the same time. E.g. If you want the batter report and temperature report to be sent out at the same time, you just need to set the configuration value to 33 (1+32).  </Description>
+      <ParameterNumber>103</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Battery Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>128</From>
+          <To>128</To>
+          <Description>Luminance Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>16</From>
+          <To>16</To>
+          <Description>Ultraviolet Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>64</From>
+          <To>64</To>
+          <Description>Humidity Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>32</From>
+          <To>32</To>
+          <Description>Temperature Report is enabled.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>To set the interval time of sending reports in Report group 1</Name>
+      <Description>To set the interval time of sending reports in Report group 1</Description>
+      <ParameterNumber>111</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>3600</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>5</From>
+          <To>2678400</To>
+          <Description>Available rang is 5 to 2678400 seconds.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>To set the interval time of sending reports in Report group 2</Name>
+      <Description>To set the interval time of sending reports in Report group 2</Description>
+      <ParameterNumber>112</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>3600</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>5</From>
+          <To>2678400</To>
+          <Description>Available rang is 5 to 2678400 seconds.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>To set the interval time of sending reports in Report group 3</Name>
+      <Description>To set the interval time of sending reports in Report group 3</Description>
+      <ParameterNumber>113</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>3600</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>5</From>
+          <To>2678400</To>
+          <Description>Available rang is 5 to 2678400 seconds.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/Disable waking up for 10 minutes when re-power on (battery mode) the MultiSensor.</Name>
+      <Description>Enable/Disable waking up for 10 minutes when re-power on (battery mode) the MultiSensor.</Description>
+      <ParameterNumber>2</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Temperature sensor calibration</Name>
+      <Description>Temperature sensor calibration.
+Note:
+1.	High byte is the calibration value. Low byte is the unit (0x01=Celsius, 0x02=Fahrenheit)
+2.	The calibration value (high byte) contains one decimal point. E.g. if the value is set to 20 (0x1401), the calibration value is 2.0 ℃ (EU/AU version) or if the value is set to 20 (0x1402), the calibration value is 2.0 ℉(US version)
+3.	The calibration value (high byte) = standard value - measure value.
+E.g.  If measure value =25.3℃ and the standard value = 23.2℃, so the calibration value= 23.2℃ - 25.3℃= -2.1℃ (0xEB).
+If the measure value =30.1℃ and the standard value = 33.2℃, so the calibration value= 33.2℃ - 30.1℃=3.1℃ (0x1F).</Description>
+      <ParameterNumber>201</ParameterNumber>
+      <Size>2</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>-128</From>
+          <To>127</To>
+          <Description>Available rang is -12.8℃ to 12.7℃.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Humidity sensor calibration</Name>
+      <Description>Humidity sensor calibration.
+The calibration value = standard value - measure value.
+E.g.  If measure value =80RH and the standard value = 75RH, so the calibration value= 75RH – 80RH= -5RH (0xFB).
+If the measure value =85RH and the standard value = 90RH, so the calibration value= 90RH – 85RH=5RH (0x05).
+</Description>
+      <ParameterNumber>202</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>-50</From>
+          <To>50</To>
+          <Description>Available rang is -50RH to 50RH.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Luminance sensor calibration</Name>
+      <Description>Luminance sensor calibration.
+The calibration value = standard value - measure value.
+E.g.  If measure value =800Lux and the standard value = 750Lux, so the calibration value= 750 – 800= -50 (0xFFCE).
+If the measure value =850Lux and the standard value = 900Lux, so the calibration value= 900 – 850=50 (0x0032)
+</Description>
+      <ParameterNumber>203</ParameterNumber>
+      <Size>2</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>-1000</From>
+          <To>1000</To>
+          <Description>Available rang is -1000Lux to 1000Lux.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Ultraviolet sensor calibration</Name>
+      <Description>Ultraviolet sensor calibration.
+The calibration value = standard value - measure value.
+E.g.  If measure value =9 and the standard value = 8, so the calibration value= 8 – 9= -1 (0xFE).
+If the measure value =7 and the standard value = 9, so the calibration value= 9 – 7=2 (0x02).
+</Description>
+      <ParameterNumber>204</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>-10</From>
+          <To>10</To>
+          <Description>Available rang is -10 to 10.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/disable all configuration parameters to be locked </Name>
+      <Description>Enable/disable all configuration parameters to be locked.</Description>
+      <ParameterNumber>252</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Reset to factory defaults. </Name>
+      <Description>Reset to factory defaults. </Description>
+      <ParameterNumber>255</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1431655765</From>
+          <To>1431655765</To>
+          <Description>Reset the product to factory defaults.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Reset all configuration parameters to factory defaults.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the PIR time.</Name>
+      <Description>The default PIR time is 4 minutes. The Multisensor will send BASIC SET CC (0x00) to the associated nodes if no motion is triggered again in 4 minutes.</Description>
+      <ParameterNumber>3</ParameterNumber>
+      <Size>2</Size>
+      <DefaultValue>240</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>10</From>
+          <To>3600</To>
+          <Description>The range of PIR time is 10 to 3600.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Configure the default low battery value.</Name>
+      <Description>Configure the default low battery value. When the current battery level is lower than this value, it will send out the low battery alarm.</Description>
+      <ParameterNumber>39</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>20</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>10</From>
+          <To>50</To>
+          <Description>Available rang is 10% to 50%.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the sensitivity of the motion sensor.</Name>
+      <Description>This parameter changes the sensitivity level of the motion detector.</Description>
+      <ParameterNumber>4</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>5</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Minimum Sensitivity</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>2</From>
+          <To>2</To>
+          <Description>Sensitivity Level 2 of 6</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>3</From>
+          <To>3</To>
+          <Description>Sensitivity Level 3 of 6</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Sensitivity Level 1 of 6</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>5</From>
+          <To>5</To>
+          <Description>Maximum Sensitivity</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>4</From>
+          <To>4</To>
+          <Description>Sensitivity Level 5 of 6</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/disable the selective reporting only when measurements reach a certain threshold or percentage</Name>
+      <Description>Enable/disable the selective reporting only when measurements reach a certain threshold or percentage. This is used to reduce network traffic.  
+Note: If USB power, the Sensor will check the threshold every 10 seconds. If battery power, the Sensor will check the threshold when it is waken up.</Description>
+      <ParameterNumber>40</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Threshold change in temperature to induce an automatic report. </Name>
+      <Description>Threshold change in temperature to induce an automatic report. 
+Note:
+1.	The unit is Fahrenheit for US version, Celsius for EU/AU version.
+2.	High byte is the threshold value. Low byte is the unit (0x01=Celsius, 0x02=Fahrenheit).
+3.	The threshold value (high byte) contains one decimal point. E.g. if the value is set to 20 (0x001401), the threshold value =2.0 ℃ (EU/AU version) or if the value is set to 20 (0x001402), the threshold value= 2.0 ℉ (US version). When the current temperature gap is more then 2.0, which will induce a temperature report to be sent out.</Description>
+      <ParameterNumber>41</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>20</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>10</From>
+          <To>2120</To>
+          <Description>Available rang of threshold is 1℉ to 212℉.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Threshold change in humidity to induce an automatic report</Name>
+      <Description>Threshold change in humidity to induce an automatic report.
+Note:
+1.	The unit is %.
+2.	The default value is 10, which means that if the current humidity gap is more than 10%, it will send out a humidity report.
+</Description>
+      <ParameterNumber>42</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>10</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>100</To>
+          <Description>Available rang is 1% to 100%.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Threshold change in luminance to induce an automatic report.</Name>
+      <Description>Threshold change in luminance to induce an automatic report.</Description>
+      <ParameterNumber>43</ParameterNumber>
+      <Size>2</Size>
+      <DefaultValue>100</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>30000</To>
+          <Description>Available rang is 1 LUX to 30000 LUX.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Threshold change in battery level to induce an automatic report.</Name>
+      <Description>Threshold change in battery level to induce an automatic report.
+Note:
+1.	The unit is %.
+2.	The default value is 10, which means that if the current battery level gap is more than 10%, it will send out a battery report.
+</Description>
+      <ParameterNumber>44</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>10</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>100</To>
+          <Description>Available rang is 1% to 100%.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Threshold change in ultraviolet to induce an automatic report.</Name>
+      <Description>Threshold change in ultraviolet to induce an automatic report.</Description>
+      <ParameterNumber>45</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>2</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>11</To>
+          <Description>Available rang is 1 to 11.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/disable to send the alarm report of low temperature</Name>
+      <Description>Enable/disable to send the alarm report of low temperature(&lt;-15℃).
+Note:
+If it is enabled, the MultiSensor will send a report of Multi Level Temperature CC to controller when the current temperature is less than -15℃).</Description>
+      <ParameterNumber>46</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>30000</To>
+          <Description>Available rang is 1LUX to 30000LUX.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/disable to send a report when the measurement is more than the upper limit value or less than the lower limit value.</Name>
+      <Description>Enable/disable to send a report when the measurement is more than the upper limit value or less than the lower limit value.</Description>
+      <ParameterNumber>48</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Enable.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the upper limit value of temperature sensor. </Name>
+      <Description>Set the upper limit value of temperature sensor.  When the measurement is more than this upper limit, which will trigger to sent out a sensor report.  
+
+</Description>
+      <ParameterNumber>49</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>824</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>-400</From>
+          <To>2120</To>
+          <Description>Available rang is -40.0℉ to 212.0℉.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Which command would be sent when the motion sensor triggered.</Name>
+      <Description>To set which command would be sent when the motion sensor triggered.</Description>
+      <ParameterNumber>5</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>1</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Send Basic Set CC</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>2</From>
+          <To>2</To>
+          <Description>Send Sensor Binary Report CC</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the lower limit value of temperature sensor.</Name>
+      <Description>Set the lower limit value of temperature sensor. When the measurement is less than this lower limit, which will trigger to sent out a sensor report.  
+High byte is the lower limit value.</Description>
+      <ParameterNumber>50</ParameterNumber>
+      <Size>4</Size>
+      <DefaultValue>320</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>-400</From>
+          <To>2120</To>
+          <Description>Available rang is -40.0℉ to 212.0℉.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the upper limit value of humidity sensor. </Name>
+      <Description>Set the upper limit value of humidity sensor. when the measurement is more than this upper limit, which will trigger to sent out a sensor report.  </Description>
+      <ParameterNumber>51</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>60</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>100</To>
+          <Description>Available rang is 0% to 100%.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the lower limit value of humidity sensor.</Name>
+      <Description>Set the lower limit value of humidity sensor. When the measurement is less than this lower limit, which will trigger to sent out a sensor report. </Description>
+      <ParameterNumber>52</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>50</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>100</To>
+          <Description>Available rang is 0% to 100%.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the upper limit value of Lighting sensor</Name>
+      <Description>Set the upper limit value of Lighting sensor. When the measurement is more than this upper limit, which will trigger to sent out a sensor report.  </Description>
+      <ParameterNumber>53</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>1000</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>30000</To>
+          <Description>Available rang is 0 to 30000LUX.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the lower limit value of Lighting sensor.</Name>
+      <Description>Set the lower limit value of Lighting sensor. When the measurement is less than this lower limit, which will trigger to sent out a sensor report.  </Description>
+      <ParameterNumber>54</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>100</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>30000</To>
+          <Description>Available rang is 0 to 30000LUX.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the upper limit value of ultraviolet sensor.</Name>
+      <Description>Set the upper limit value of ultraviolet sensor. When the measurement is more than this upper limit, which will trigger to sent out a sensor report. </Description>
+      <ParameterNumber>55</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>8</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>11</To>
+          <Description>Available rang is 1 to 11.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the lower limit value of ultraviolet sensor.</Name>
+      <Description>Set the lower limit value of ultraviolet sensor. When the measurement is less than this upper limit, which will trigger to sent out a sensor report.</Description>
+      <ParameterNumber>56</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>4</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>11</To>
+          <Description>Available rang is 1 to 11.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the recover limit value of temperature sensor.</Name>
+      <Description>Note:
+1.	When the current measurement &lt;= (Upper limit – Recover limit), the upper limit report is enabled and then it would send out a sensor report when the next measurement is more than the upper limit. After that the upper limit report would be disabled again until the measurement &lt;= (Upper limit – Recover limit).
+2.	When the current measurement &gt;= (Lower limit + Recover limit), the lower limit report is enabled and then it would send out a sensor report when the next measurement is less than the lower limit. After that the lower limit report would be disabled again until the measurement &gt;= (Lower limit + Recover limit).
+3.	High byte is the recover limit value. Low byte is the unit (0x01=Celsius, 0x02=Fahrenheit).
+</Description>
+      <ParameterNumber>57</ParameterNumber>
+      <Size>2</Size>
+      <DefaultValue>20</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>10</From>
+          <To>255</To>
+          <Description>Available rang is 1.0℉ to 25.5℉</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the recover limit value of humidity sensor.</Name>
+      <Description>Set the recover limit value of humidity sensor.
+Note:
+1.	When the current measurement &lt;= (Upper limit – Recover limit), the upper limit report is enabled and then it would send out a sensor report when the next measurement is more than the upper limit. After that the upper limit report would be disabled again until the measurement &lt;= (Upper limit – Recover limit).
+2.	When the current measurement &gt;= (Lower limit + Recover limit), the lower limit report is enabled and then it would send out a sensor report when the next measurement is less than the lower limit. After that the lower limit report would be disabled again until the measurement &gt;= (Lower limit + Recover limit).
+</Description>
+      <ParameterNumber>58</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>5</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>50</To>
+          <Description>Available rang is 1 to 50%</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the recover limit value of Lighting sensor.</Name>
+      <Description>Set the recover limit value of Lighting sensor.
+Note:
+1.	When the current measurement &lt;= (Upper limit – Recover limit), the upper limit report is enabled and then it would send out a sensor report when the next measurement is more than the upper limit. After that the upper limit report would be disabled again until the measurement &lt;= (Upper limit – Recover limit).
+2.	When the current measurement &gt;= (Lower limit + Recover limit), the lower limit report is enabled and then it would send out a sensor report when the next measurement is less than the lower limit. After that the lower limit report would be disabled again until the measurement &gt;= (Lower limit + Recover limit).
+3.	Unit = 10×Recover limit (Lux)
+</Description>
+      <ParameterNumber>59</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>100</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>127</To>
+          <Description>Available rang is 10Lux to 1270Lux</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the recover limit value of Ultraviolet sensor.</Name>
+      <Description>Set the recover limit value of Ultraviolet sensor.
+Note:
+1.	When the current measurement &lt;= (Upper limit – Recover limit), the upper limit report is enabled and then it would send out a sensor report when the next measurement is more than the upper limit. After that the upper limit report would be disabled again until the measurement &lt;= (Upper limit – Recover limit).
+2.	When the current measurement &gt;= (Lower limit + Recover limit), the lower limit report is enabled and then it would send out a sensor report when the next measurement is less than the lower limit. After that the lower limit report would be disabled again until the measurement &gt;= (Lower limit + Recover limit).
+</Description>
+      <ParameterNumber>60</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>2</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>256</From>
+          <To>256</To>
+          <Description>Keep sleep state for Battery power mode</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>USB power mode</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>5</To>
+          <Description>Available rang is 1 to 5.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>257</From>
+          <To>257</To>
+          <Description>Keep awake for 10 minutes for battery power mode.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Get the out-of-limit state of the Sensors.</Name>
+      <Description>Get the out-of-limit state of the Sensors.</Description>
+      <ParameterNumber>61</ParameterNumber>
+      <Size>2</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>8</From>
+          <To>8</To>
+          <Description>Ultraviolet sensor is out of the lower limit</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>32</From>
+          <To>32</To>
+          <Description>Humidity sensor is out of the upper limit</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>16</From>
+          <To>16</To>
+          <Description>Temperature sensor is out of the upper limit</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>2</From>
+          <To>2</To>
+          <Description>Humidity sensor is out of the lower limit</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>4</From>
+          <To>4</To>
+          <Description>Luminance sensor is out of the lower limit</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>64</From>
+          <To>64</To>
+          <Description>Luminance sensor is out of the upper limit</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>128</From>
+          <To>128</To>
+          <Description>Ultraviolet sensor is out of the upper limit</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Temperature sensor is out of the lower limit</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the default unit of the automatic temperature report in parameter 101-103.</Name>
+      <Description>Set the default unit of the automatic temperature report in parameter 101-103.</Description>
+      <ParameterNumber>64</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>2</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>2</From>
+          <To>2</To>
+          <Description>The unit is Fahrenheit.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>The unit is Celsius.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Set the timeout of awake after the Wake Up CC is sent out..</Name>
+      <Description>Set the timeout of awake after the Wake Up CC is sent out..</Description>
+      <ParameterNumber>8</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>30</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>8</From>
+          <To>127</To>
+          <Description>Available rang is 8 to 127 seconds.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Enable/disable the LED blinking when the PIR is triggered.</Name>
+      <Description>Enable/disable the LED blinking when the PIR is triggered.</Description>
+      <ParameterNumber>81</ParameterNumber>
+      <Size>1</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>1</From>
+          <To>1</To>
+          <Description>Disable</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>Enable.</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+    <ConfigurationParameterExport>
+      <Name>Report the current power mode and the product state for battery power mode</Name>
+      <Description>Report the current power mode and the product state for battery power mode.
+Note: this parameter cannot be used as Set usage.</Description>
+      <ParameterNumber>9</ParameterNumber>
+      <Size>2</Size>
+      <DefaultValue>0</DefaultValue>
+      <pType>0</pType>
+      <flagReadOnly>false</flagReadOnly>
+      <flagReInclude>false</flagReInclude>
+      <flagAdvanced>false</flagAdvanced>
+      <v3plus>false</v3plus>
+      <minValue>0</minValue>
+      <maxValue>0</maxValue>
+      <ConfigurationParameterValues>
+        <ConfigurationParameterValueExport>
+          <From>257</From>
+          <To>257</To>
+          <Description>Keep awake for 10 minutes for battery power mode.</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>256</From>
+          <To>256</To>
+          <Description>Keep sleep state for Battery power mode</Description>
+        </ConfigurationParameterValueExport>
+        <ConfigurationParameterValueExport>
+          <From>0</From>
+          <To>0</To>
+          <Description>USB power mode</Description>
+        </ConfigurationParameterValueExport>
+      </ConfigurationParameterValues>
+    </ConfigurationParameterExport>
+  </ConfigurationParameters>
+  <Features>
+    <FeatureExport>
+      <feature_Id>27</feature_Id>
+      <product_Id>2592</product_Id>
+      <option_value_bool>false</option_value_bool>
+      <option_value_text>2</option_value_text>
+      <feature_Type>eEnter_Text</feature_Type>
+      <featureName>Battery Quantity</featureName>
+      <featureDescription>Enter the number of batteries of the designated type that the product uses.</featureDescription>
+      <featurePrompt>Enter a number only for the number of batteries.</featurePrompt>
+    </FeatureExport>
+    <FeatureExport>
+      <feature_Id>26</feature_Id>
+      <product_Id>2592</product_Id>
+      <option_value_bool>false</option_value_bool>
+      <option_value_text>CR123A</option_value_text>
+      <feature_Type>eEnter_Text</feature_Type>
+      <featureName>Battery Type</featureName>
+      <featureDescription>Enter the type (e.g. AA, CR2032, AAA) of the battery/batteries that the product uses.</featureDescription>
+      <featurePrompt>Enter the battery type designation.</featurePrompt>
+    </FeatureExport>
+    <FeatureExport>
+      <feature_Id>22</feature_Id>
+      <product_Id>2592</product_Id>
+      <option_value_bool>false</option_value_bool>
+      <option_value_text />
+      <option_value_selections>
+        <string>Updatable by Consumer by RF</string>
+      </option_value_selections>
+      <feature_Type>eSelect_One</feature_Type>
+      <featureName>Firmware Updatable</featureName>
+      <featureDescription>Indicates whether the firmware can be updated and whether it is done by the consumer or a technician.</featureDescription>
+      <featurePrompt>Choose one.</featurePrompt>
+    </FeatureExport>
+    <FeatureExport>
+      <feature_Id>19</feature_Id>
+      <product_Id>2592</product_Id>
+      <option_value_bool>true</option_value_bool>
+      <option_value_text />
+      <feature_Type>eYes_No</feature_Type>
+      <featureName>IP (Ingress Protection) Rated</featureName>
+      <featureDescription>Product is suitable for Outdoor use and is waterproof under an IP (Ingress Protection) rating system.</featureDescription>
+      <featurePrompt>Only choose Yes if this device is IP rated.</featurePrompt>
+    </FeatureExport>
+    <FeatureExport>
+      <feature_Id>9</feature_Id>
+      <product_Id>2592</product_Id>
+      <option_value_bool>false</option_value_bool>
+      <option_value_text />
+      <option_value_selections>
+        <string>Air Temperature</string>
+        <string>Humidity</string>
+        <string>Luminance</string>
+        <string>Motion/No Motion (Binary)</string>
+        <string>Ultraviolet Index</string>
+        <string>Vibration/Shock (Binary)</string>
+      </option_value_selections>
+      <feature_Type>eSelect_Many</feature_Type>
+      <featureName>Sensors</featureName>
+      <featureDescription>Sensor types supported by the product.</featureDescription>
+      <featurePrompt>Select multiple sensors by holding down CTRL as you make selections.</featurePrompt>
+    </FeatureExport>
+    <FeatureExport>
+      <feature_Id>36</feature_Id>
+      <product_Id>2592</product_Id>
+      <option_value_bool>false</option_value_bool>
+      <option_value_text />
+      <option_value_selections>
+        <string>Home Security</string>
+      </option_value_selections>
+      <feature_Type>eSelect_Many</feature_Type>
+      <featureName>Supported Notification Types</featureName>
+      <featureDescription>Select the Notification Types that the product handles (controllers), or sends (slaves).</featureDescription>
+      <featurePrompt>Use the CTRL key to select more than one.
+</featurePrompt>
+    </FeatureExport>
+  </Features>
+  <Supports_NWI>true</Supports_NWI>
+  <Supports_Explorer>true</Supports_Explorer>
+  <is_FLiRS>false</is_FLiRS>
+  <Supports_SmartStart>false</Supports_SmartStart>
+</ProductExport>
